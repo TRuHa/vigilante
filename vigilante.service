@@ -1,6 +1,9 @@
 [Unit]
-Description=Watch your network for you
+Description= What IP is there?
 
 [Service]
-Type=oneshot
-ExecStart=/usr/bin/python3 /home/pi/vigilante/vigilante.py
+Type=idle
+ExecStart=/usr/bin/python3 /bin/vigilante/vigilante.py
+
+[Install]
+WantedBy=multi-user.target

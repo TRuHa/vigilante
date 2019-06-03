@@ -1,0 +1,9 @@
+{"config": {
+  "token": "Put your TOKEN",
+  "channel_id": "Put your Channel ID"
+},
+  "network": {
+  "192.168.1.1": {"mac": "00:11:22:33:44:55", "state": "down", "last_view": 0, "notify": "YES", "host": "Router"},
+  "192.168.1.10": {"mac": "00:11:22:33:44:55", "state": "down", "last_view": 0, "notify": "YES", "host": "Desktop"},
+  "192.168.1.20": {"mac": "00:11:22:33:44:55", "state": "down", "last_view": 0, "notify": "YES", "host": "SmartPhone"},
+}

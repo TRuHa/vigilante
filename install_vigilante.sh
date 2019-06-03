@@ -1,6 +1,21 @@
 #!/bin/bash
-echo Making systemd user directory
-mkdir -p ~/.config/systemd/user
-echo Copying service and timer
-cp vigilante.service ~/.config/systemd/user/
-cp vigilante.timer ~/.config/systemd/user/
+if (( $EUID != 0 )); then
+  echo "Please run as root"
+  exit
+fi
+
+echo "Instaling..."
+
+mkdir /bin/vigilante
+
+cp whatip.py /bin/vigilante/vigilante.py
+cp config.json /bin/vigilante/config.json
+cp whatip.service /lib/systemd/system/vigilante.service
+
+chmod 644 /lib/systemd/system/vigilante.service
+
+systemctl daemon-reload
+systemctl enable vigilante.service
+systemctl start vigilante.service
+
+echo "Instalado correctamente"
