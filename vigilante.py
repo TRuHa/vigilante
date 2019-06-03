@@ -50,7 +50,7 @@ class Vigilante:
     def vigila(self):
         self.data = self.manager.dict()
         outsider = []
-        range_ip = "10.0.10"
+        range_ip = "Put your range IP"
         while True:
             jobs = []
             start = time.time()
