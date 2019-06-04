@@ -2,7 +2,7 @@
 
 Monitors to network and prevents intruders with Python and your Rasbperry Pi
 
-En esta nueva version incorpora alguna varian y manteniendo la esencia del orginal.
+In this new version it incorporates some variations and maintaining the essence of the original.
 
-  - Recibe notificacion cuando se conecta o desconecta un dispositivo conocido.
-  - Recibe notificacion cuando se conecta un intruso.
+  - Receive notification when a known device is connected or disconnected.
+  - Receive notification when an intruder connects.
